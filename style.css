@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  /* Colors */
+
+  --white: hsl(0, 0%, 100%);
+
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+
+  --brown800: hsl(14, 45%, 36%);
+
+  --rose800: hsl(332, 51%, 32%);
+  --rose50: hsl(330, 100%, 98%);
+}
+
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+/* Common CSS codes */
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--stone100);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Young", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--brown800);
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Container Css codes */
+.container {
+  margin-top: 50px;
+  width: 700px;
+}
+
+.card {
+  width: 100%;
+  background: var(--white);
+  padding: 35px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+
+/* Header Card Css codes */
+.header_card {
+  margin-top: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.header_card h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: var(--stone900);
+}
+
+.header_card>p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: var(--stone600);
+}
+
+.header_card .prepar {
+  width: 100%;
+  padding: 25px;
+  background: var(--rose50);
+}
+
+.header_card .prepar h3 {
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  color: var(--rose800);
+}
+
+.header_card .prepar ul {
+  padding-left: 25px;
+  margin-top: 16px;
+}
+
+.header_card .prepar ul li {
+  font-size: 16px;
+  padding-left: 25px;
+  color: var(--rose800);
+  margin-bottom: 7px;
+}
+
+.header_card .prepar ul li span.color {
+  color: var(--stone600);
+  font-weight: 600;
+}
+
+.header_card .prepar ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.header_card .prepar ul li span {
+  color: var(--stone600);
+}
+
+
+/* Ingredients card css codes */
+.ingredients_card {
+  width: 100%;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ingredients_card h2 {
+  margin-bottom: 19px;
+}
+
+.ingredients_card ul {
+  padding-left: 17px;
+  margin-bottom: 30px;
+}
+
+.ingredients_card ul li {
+  color: var(--stone600);
+  padding-left: 25px;
+  margin-bottom: 7px;
+}
+
+.ingredients_card ul li:last-child {
+  margin-bottom: 0px;
+}
+
+
+/* Instructions card css codes */
+.instructions_card {
+  width: 100%;
+  margin-top: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.instructions_card h2 {
+  margin-bottom: 19px;
+}
+
+.instructions_card ul {
+  padding-left: 17px;
+  margin-bottom: 30px;
+  list-style-type: decimal;
+}
+
+.instructions_card li {
+  color: var(--brown800);
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.instructions_card ul li span.ins_col {
+  color: var(--stone600);
+  font-weight: 600;
+}
+
+.instructions_card ul li span {
+  color: var(--stone600);
+}
+
+
+/* Instructions card css codes */
+.nutrition_card {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.nutrition_card h2 {
+  margin-bottom: 19px;
+}
+
+.nutrition_card>p {
+  color: var(--stone600);
+}
+
+.nutrition_card .nutrition {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nutrition hr {
+  border: 1px solid #ddd;
+}
+
+.Calories {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+  padding-left: 35px;
+}
+
+.Calories:last-child {
+  margin-bottom: 0px;
+}
+
+.Calories span {
+  color: var(--stone600);
+}
+
+.Calories p {
+  color: var(--brown800);
+  font-weight: 700;
+}
+
+
+/* Mobile Design */
+@media screen and (max-width:500px) {
+
+  /* Container Css codes */
+  .container {
+    width: 90%;
+  }
+
+  .card {
+    padding: 0;
+    border-radius: 15px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 230px;
+    display: block;
+    border-radius: 0;
+  }
+
+  .pad {
+    padding-top: 0;
+    padding-bottom: 45px;
+    padding-left: 40px;
+    padding-right: 58px;
+  }
+
+  /* Header Card Css codes */
+  .header_card>p {
+    line-height: 25px;
+    margin-bottom: 45px;
+  }
+
+  .header_card .prepar {
+    padding: 22px;
+  }
+
+  .header_card .prepar ul {
+    padding-left: 25px;
+    margin-top: 16px;
+  }
+
+  .header_card .prepar ul li {
+    padding-left: 18px;
+    margin-bottom: 9px;
+  }
+
+  /* Ingredients card css codes */
+  .ingredients_card ul {
+    padding-left: 19px;
+    margin-bottom: 30px;
+  }
+
+  .ingredients_card ul li {
+    padding-left: 18px;
+    margin-bottom: 9px;
+  }
+
+  .ingredients_card ul li:last-child {
+    margin-bottom: 0px;
+  }
+
+  /* Instructions card css codes */
+  .instructions_card li {
+    padding-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .instructions_card ul li span.ins_col {
+    font-weight: 600;
+  }
+
+  /* Instructions card css codes */
+  .nutrition_card {
+    margin-top: 25px;
+  }
+
+  .Calories {
+    width: 90%;
+  }
+
+  .Calories:last-child {
+    margin-bottom: 0px;
+  }
+
+}
